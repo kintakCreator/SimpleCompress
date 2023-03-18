@@ -3,13 +3,13 @@
 #include <string.h>
 
 void push(stack* current, char* value) {
-  node* newNode = malloc(sizeof(node));
-  if (newNode == NULL)
+  node* new_node = malloc(sizeof(node));
+  if (new_node == NULL)
     exit(EXIT_FAILURE);
-  newNode->value = malloc(strlen(value) + 1);
-  strcpy(newNode->value, value);
-  newNode->next = *current;
-  *current = newNode;
+  new_node->value = malloc(strlen(value) + 1);
+  strcpy(new_node->value, value);
+  new_node->next = *current;
+  *current = new_node;
 }
 
 char* pop(stack* current) {

@@ -4,7 +4,10 @@ set(CORE_PROJECT_NAME CoCore)
 
 set(CORE_PUBLIC_INCLUDES
         data/stack.h
+        data/vector.h
         io/getline.h
+        utils/error.h
+        utils/iterator.h
 )
 
 set(CORE_PRIVATE_SOURCES
